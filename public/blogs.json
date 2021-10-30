@@ -1,0 +1,41 @@
+[
+    {
+        "id": "1",
+        "name": "Dina Jems",
+        "title": "Donec Egestas Orci Viverra Fermentum",
+        "comment": "3",
+        "img": "https://demo.egenslab.com/html/tourx/assets/images/blog/b-1.png"
+    },
+
+    {
+        "id": "2",
+        "name": "Joels Parkd",
+        "title": "Praesent Ut Mattis Ante The Nullam Lobortis",
+        "comment": "5",
+        "img": "https://demo.egenslab.com/html/tourx/assets/images/blog/b-2.png"
+    },
+
+    {
+        "id": "3",
+        "name": "Rolek Anke",
+        "title": "Maecenas Vehicula Risus Non Neque",
+        "comment": "7",
+        "img": "https://demo.egenslab.com/html/tourx/assets/images/blog/b-3.png"
+    },
+
+    {
+        "id": "4",
+        "name": "Andelina Koke",
+        "title": "A Lot Of Traveling Turns you Into A Storyteller",
+        "comment": "17",
+        "img": "https://wanderers.qodeinteractive.com/wp-content/uploads/2018/02/blog-post-4-m.jpg"
+    },
+
+    {
+        "id": "5",
+        "name": "Kothis Akeas",
+        "title": "Journeys Are Best Measured In New Friends",
+        "comment": "13",
+        "img": "https://wanderers.qodeinteractive.com/wp-content/uploads/2018/02/blog-post-1-m.jpg"
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "id": "time_travel_1",
+        "name": "Sakura",
+        "position": "Tour Guide",
+        "img": "https://demo.egenslab.com/html/tourx/assets/images/guide/guide-2.png"
+    },
+    {
+        "id": "time_travel_2",
+        "name": "Ladska Kalkjf",
+        "position": "Tour Guide",
+        "img": "https://demo.egenslab.com/html/tourx/assets/images/guide/guide-3.png"
+    },
+    {
+        "id": "time_travel_3",
+        "name": "Tabiea Parkd",
+        "position": "Tour Guide",
+        "img": "https://demo.egenslab.com/html/tourx/assets/images/guide/guide-4.png"
+    },
+    {
+        "id": "time_travel_4",
+        "name": "Taekso Leiad",
+        "position": "Tour Guide",
+        "img": "https://demo.egenslab.com/html/tourx/assets/images/guide/guide-5.png"
+    },
+    {
+        "id": "time_travel_5",
+        "name": "Yarie Jukali",
+        "position": "Tour Guide",
+        "img": "https://demo.egenslab.com/html/tourx/assets/images/guide/guide-6.png"
+    },
+    {
+        "id": "time_travel_6",
+        "name": "Porsli",
+        "position": "Tour Guide",
+        "img": "https://demo.egenslab.com/html/tourx/assets/images/guide/guide-7.png"
+    },
+    {
+        "id": "time_travel_7",
+        "name": "Tabile",
+        "position": "Tour Guide",
+        "img": "https://demo.egenslab.com/html/tourx/assets/images/guide/guide-8.png"
+    }
+]
