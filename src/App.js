@@ -9,6 +9,7 @@ import Booking from './pages/Booking/Booking';
 import Contact from './pages/Contact/Contact';
 import Guides from './pages/Guide/Guides';
 import Home from './pages/Home/Home/Home';
+import Allpackages from './pages/Home/Home/TourPackage/AllPackage/Allpackages';
 import Login from './pages/Logins/Login/Login';
 import PrivateRoute from './pages/Logins/PrivateRoute/PrivateRoute';
 import HillTours from './pages/TourPackage/HillTours/HillTours';
@@ -33,6 +34,10 @@ function App() {
 
             <Route exact path='/login'>
               <Login></Login>
+            </Route>
+
+            <Route exact path='/tourpackage'>
+              <Allpackages></Allpackages>
             </Route>
 
             <PrivateRoute exact path = '/tourpackage/:booking'>

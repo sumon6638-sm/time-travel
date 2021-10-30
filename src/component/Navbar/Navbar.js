@@ -46,6 +46,12 @@ const Navbar = () => {
                         <li className="nav-item">
                             <NavLink className='text-warning text-decoration-none nav-link' activeStyle={activeTab} to='/guide'>GUIDE</NavLink>
                         </li>
+                        {
+                            user.email &&
+                            <li className="nav-item">
+                                <NavLink className='text-warning text-decoration-none nav-link' activeStyle={activeTab} to='/admin'>MANAGE</NavLink>
+                            </li>
+                        }
                         <li className="nav-item">
                             <NavLink className='text-warning text-decoration-none nav-link' activeStyle={activeTab} to='/about'>ABOUT US</NavLink>
                         </li>

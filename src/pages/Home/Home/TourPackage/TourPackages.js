@@ -4,7 +4,6 @@ import "react-multi-carousel/lib/styles.css";
 import ShowTraveller from './ShowTraveller';
 import ShowBlog from './ShowBlog';
 
-
 const TourPackages = () => {
 
     const [tourPackages, setTourPackages] = useState([]);

@@ -29,7 +29,7 @@ const Booking = () => {
                 </div>
 
                 <div className="text-center pb-4">
-                    <Link to='/hilltours'>
+                    <Link to='/tourpackage'>
                         <button className='btn btn-danger'>All Packages</button>
                     </Link>
                 </div>
