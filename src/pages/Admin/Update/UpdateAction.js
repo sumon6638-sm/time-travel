@@ -12,7 +12,7 @@ const UpdateAction = () => {
     const [tour, setTour] = useState({status: 'Accept'});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/booked/${id}`)
+        fetch(`https://bloodcurdling-cheateau-92804.herokuapp.com/booked/${id}`)
             .then(res => res.json())
             .then(data => setTour(data));
     }, [])    
@@ -28,7 +28,7 @@ const UpdateAction = () => {
 
     const handleUpdate = e => {
         if ((tour.status) == 'Accept') {
-            fetch(`http://localhost:5000/booked/${id}`, {
+            fetch(`https://bloodcurdling-cheateau-92804.herokuapp.com/booked/${id}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'
