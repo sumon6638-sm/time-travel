@@ -6,7 +6,7 @@ const ViewOrder = (props) => {
     const [order, setOrder] = useState([])
     
     useEffect(() => {
-        fetch(`http://localhost:5000/packages/${package_id}`)
+        fetch(`https://bloodcurdling-cheateau-92804.herokuapp.com/packages/${package_id}`)
             .then(res => res.json())
             .then(data => setOrder(data));
     },[])

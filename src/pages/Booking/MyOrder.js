@@ -9,7 +9,7 @@ const MyOrder = () => {
     const [orders, setOrders] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myOrders/${user?.email}`)
+        fetch(`https://bloodcurdling-cheateau-92804.herokuapp.com/myOrders/${user?.email}`)
             .then(res => res.json())
             .then(data => setOrders(data));
     }, [user.email]);

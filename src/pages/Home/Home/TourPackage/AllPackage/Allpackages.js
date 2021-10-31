@@ -7,7 +7,7 @@ const Allpackages = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/packages')
+        fetch('https://bloodcurdling-cheateau-92804.herokuapp.com/packages')
             .then(res => res.json())
             .then(data => setTourPackages(data));
     }, [])

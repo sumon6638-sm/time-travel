@@ -10,7 +10,7 @@ const ManagePackage = () => {
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('http://localhost:5000/packages', data)
+        axios.post('https://bloodcurdling-cheateau-92804.herokuapp.com/packages', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added Successfully!');
@@ -22,7 +22,7 @@ const ManagePackage = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/packages/`)
+        fetch(`https://bloodcurdling-cheateau-92804.herokuapp.com/packages/`)
             .then(res => res.json())
             .then(data => setData(data));
     }, [])

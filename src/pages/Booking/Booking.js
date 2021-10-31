@@ -17,7 +17,7 @@ const Booking = () => {
     const [packages, setPackage] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/packages/${booking}`)
+        fetch(`https://bloodcurdling-cheateau-92804.herokuapp.com/packages/${booking}`)
             .then(res => res.json())
             .then(data => setPackage(data));
     }, [])
@@ -27,7 +27,7 @@ const Booking = () => {
         data.status = 'pending'
         console.log(data);
 
-        axios.post('http://localhost:5000/booked', data)
+        axios.post('https://bloodcurdling-cheateau-92804.herokuapp.com/booked', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Booked Successfully!');

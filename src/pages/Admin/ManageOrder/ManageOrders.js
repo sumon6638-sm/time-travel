@@ -6,7 +6,7 @@ const ManageOrders = () => {
     const [orders, setOrders] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/booked')
+        fetch('https://bloodcurdling-cheateau-92804.herokuapp.com/booked')
             .then(res => res.json())
             .then(data => setOrders(data));
     }, [])
@@ -16,7 +16,7 @@ const ManageOrders = () => {
     }
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/booked/${id}`;
+        const url = `https://bloodcurdling-cheateau-92804.herokuapp.com/${id}`;
         fetch(url, {
             method: 'DELETE'
         }, [])

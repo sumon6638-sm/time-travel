@@ -9,13 +9,13 @@ const ManageSinglePackage = (props) => {
     const [packages, setPackages] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/packages')
+        fetch('https://bloodcurdling-cheateau-92804.herokuapp.com/packages')
             .then(res => res.json())
             .then(data => setPackages(data));
     })
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/packages/${id}`;
+        const url = `https://bloodcurdling-cheateau-92804.herokuapp.com/packages/${id}`;
         fetch(url, {
             method: 'DELETE'
         })
