@@ -45,7 +45,9 @@ const ManageSinglePackage = (props) => {
                         <p class="card-text"><small class="text-muted">{duration} days / {duration - 1} night</small></p>
                         <Link to={dynamicUrl}><button className='btn btn-success text-warning fw-bold'><i class="fas fa-check-circle"></i> Book Now</button></Link>
 
-                        <button onClick={()=> handleDelete(_id)} className="btn btn-danger ms-2 fw-bold">Delete</button>
+                        <button className='btn btn-primary m-2'>Update</button>
+
+                        <button onClick={()=> handleDelete(_id)} className="btn btn-danger fw-bold">Delete</button>
                     </div>
                 </div>
             </div>

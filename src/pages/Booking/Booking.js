@@ -3,12 +3,16 @@ import { useForm } from "react-hook-form";
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { useParams } from 'react-router';
+import { useHistory, useLocation, useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hook/useAuth';
 import { data } from 'autoprefixer';
 
 const Booking = () => {
+    const location = useLocation();
+    const history = useHistory();
+
+    const redirect_url = location.state?.from || '/myOrders';
 
     const { user } = useAuth();
 
@@ -32,6 +36,7 @@ const Booking = () => {
                 if (res.data.insertedId) {
                     alert('Booked Successfully!');
                     reset();
+                    history.push(redirect_url);
                     // window.location.reload();
                 }
             })
