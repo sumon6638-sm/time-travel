@@ -14,7 +14,7 @@ const Guides = () => {
     },[])
 
     return (
-        <div>
+        <div className='container'>
             <h2 className='text-center' style={{ fontFamily: "Fruktur" }}>OUT INTERESTING GUIDES</h2>
             <hr className='w-25 mx-auto' />
 
