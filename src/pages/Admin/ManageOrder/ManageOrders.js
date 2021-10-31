@@ -16,7 +16,7 @@ const ManageOrders = () => {
     }
 
     const handleDelete = id => {
-        const url = `https://bloodcurdling-cheateau-92804.herokuapp.com/${id}`;
+        const url = `https://bloodcurdling-cheateau-92804.herokuapp.com/booked/${id}`;
         fetch(url, {
             method: 'DELETE'
         }, [])
