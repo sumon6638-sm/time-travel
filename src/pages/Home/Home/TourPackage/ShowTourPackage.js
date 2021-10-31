@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ShowTourPackage = (props) => {
-    const { id, name, price, duration, description, img } = props.tourPackage
+const ShowTourPackage = ({ tourPackage }) => {
+    const { _id, name, price, duration, description, img } = tourPackage
 
-    const dynamicUrl = `/tourPackage/${id}`
+    const dynamicUrl = `/tourPackage/${_id}`
 
     return (
         <div className="card mb-3 shadow">

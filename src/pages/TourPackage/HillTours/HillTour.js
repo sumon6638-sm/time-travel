@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const HillTour = (props) => {
 
-    const { id, name, price, duration, description, img } = props.hillTour
+    const { _id, name, price, duration, description, img } = props.hillTour
 
-    const dynamicUrl = `/tourPackage/${id}`
+    const dynamicUrl = `/tourPackage/${_id}`
 
 
     return (

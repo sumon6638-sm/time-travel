@@ -4,8 +4,12 @@ import Footer from './component/Footer/Footer';
 import Navbar from './component/Navbar/Navbar';
 import AuthProvider from './context/AuthProvider';
 import About from './pages/About/About';
+import AdminDashboard from './pages/Admin/AdminDashBoard/AdminDashBoard';
+import ManageOrders from './pages/Admin/ManageOrder/ManageOrders';
+import ManagePackage from './pages/Admin/ManagePackage/ManagePackage';
 import Blogs from './pages/Blogs/Blogs';
 import Booking from './pages/Booking/Booking';
+import MyOrder from './pages/Booking/MyOrder';
 import Contact from './pages/Contact/Contact';
 import Guides from './pages/Guide/Guides';
 import Home from './pages/Home/Home/Home';
@@ -52,6 +56,10 @@ function App() {
               <OceanTours></OceanTours>
             </Route>
 
+            <PrivateRoute exact path='/myOrders'>
+              <MyOrder></MyOrder>
+            </PrivateRoute>
+
             <Route exact path='/blogs'>
               <Blogs></Blogs>
             </Route>
@@ -59,6 +67,18 @@ function App() {
             <Route exact path='/guide'>
               <Guides></Guides>
             </Route>
+
+            <Route exact path='/admin'>
+              <AdminDashboard></AdminDashboard>
+            </Route>
+
+            <PrivateRoute exact path='/manageOrder'>
+              <ManageOrders></ManageOrders>
+            </PrivateRoute>
+
+            <PrivateRoute exact path='/managePackage'>
+              <ManagePackage></ManagePackage>
+            </PrivateRoute>
 
             <Route exact path='/about'>
               <About></About>

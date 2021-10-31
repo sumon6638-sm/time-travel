@@ -8,7 +8,7 @@ const HillTours = () => {
     const [hillTours, setHillTours] = useState([]);
     
     useEffect(() => {
-        fetch('./hillTravel.json')
+        fetch('http://localhost:5000/packages')
             .then(res => res.json())
             .then(data => setHillTours(data));
     },[])
@@ -20,9 +20,9 @@ const HillTours = () => {
                 <hr className='w-25 mx-auto' />
                 <div className='row row-cols-1 row-cols-md-3 g-4'>
                     {
-                        hillTours.map(hillTour =>
+                        hillTours.slice(0, 8).map(hillTour =>
                             <HillTour
-                                key={hillTour.id}
+                                key={hillTour._id}
                                 hillTour={hillTour}
                             ></HillTour>
                         )

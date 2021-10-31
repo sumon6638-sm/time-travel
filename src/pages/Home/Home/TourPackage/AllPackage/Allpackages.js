@@ -7,14 +7,14 @@ const Allpackages = () => {
 
 
     useEffect(() => {
-        fetch('./packageTravel.json')
+        fetch('http://localhost:5000/packages')
             .then(res => res.json())
             .then(data => setTourPackages(data));
     }, [])
 
     return (
         <div>
-            <div className="my-5">
+            <div className="container my-5">
                 <h2 className='text-center' style={{ fontFamily: "Fruktur" }}>OUR AWESOME TOUR PACKAGES</h2>
                 <hr className='w-25 mx-auto' />
                 <div className=''>

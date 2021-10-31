@@ -1,6 +1,5 @@
 [
     {
-        "id": "paris180",
         "name": "Paris Hill Tour",
         "price": "180",
         "description": "The origin of the word 'travel' is most likely lost to history. The term 'travel' may originate from the Old French word travail, which means 'work'. According to the Merriam Webster dictionary, the first known use of the word travel was in the 14th century.",
@@ -8,7 +7,6 @@
         "img": "https://demo.egenslab.com/html/tourx/assets/images/package/p-1.png"
     },
     {
-        "id": "garda280",
         "name": "Lake Garda, Italy",
         "price": "280",
         "description": "The origin of the word 'travel' is most likely lost to history. The term 'travel' may originate from the Old French word travail, which means 'work'. According to the Merriam Webster dictionary, the first known use of the word travel was in the 14th century.",
@@ -16,7 +14,6 @@
         "img": "https://demo.egenslab.com/html/tourx/assets/images/package/p-2.png"
     },
     {
-        "id": "mount120",
         "name": "Mount Dtna, Italy",
         "price": "120",
         "description": "The origin of the word 'travel' is most likely lost to history. The term 'travel' may originate from the Old French word travail, which means 'work'. According to the Merriam Webster dictionary, the first known use of the word travel was in the 14th century.",
@@ -24,7 +21,6 @@
         "img": "https://demo.egenslab.com/html/tourx/assets/images/package/p-3.png"
     },
     {
-        "id": "amalfi300",
         "name": "Amalfi Costa, Italy",
         "price": "300",
         "description": "The origin of the word 'travel' is most likely lost to history. The term 'travel' may originate from the Old French word travail, which means 'work'. According to the Merriam Webster dictionary, the first known use of the word travel was in the 14th century.",
@@ -32,7 +28,6 @@
         "img": "https://demo.egenslab.com/html/tourx/assets/images/package/p-4.png"
     },
     {
-        "id": "French240",
         "name": "French Rivira, France",
         "price": "240",
         "description": "The origin of the word 'travel' is most likely lost to history. The term 'travel' may originate from the Old French word travail, which means 'work'. According to the Merriam Webster dictionary, the first known use of the word travel was in the 14th century.",
@@ -40,7 +35,6 @@
         "img": "https://demo.egenslab.com/html/tourx/assets/images/package/p-5.png"
     },
     {
-        "id": "lake145",
         "name": "Lake Geneva, France",
         "price": "145",
         "description": "The origin of the word 'travel' is most likely lost to history. The term 'travel' may originate from the Old French word travail, which means 'work'. According to the Merriam Webster dictionary, the first known use of the word travel was in the 14th century.",
@@ -48,7 +42,6 @@
         "img": "https://demo.egenslab.com/html/tourx/assets/images/package/p-6.png"
     },
     {
-        "id": "souks300",
         "name": "Souks Of Deira",
         "price": "300",
         "description": "The origin of the word 'travel' is most likely lost to history. The term 'travel' may originate from the Old French word travail, which means 'work'. According to the Merriam Webster dictionary, the first known use of the word travel was in the 14th century.",
@@ -56,7 +49,6 @@
         "img": "https://demo.egenslab.com/html/tourx/assets/images/destination/d-9.png"
     },
     {
-        "id": "maritime240",
         "name": "Maritime Heritage",
         "price": "240",
         "description": "The origin of the word 'travel' is most likely lost to history. The term 'travel' may originate from the Old French word travail, which means 'work'. According to the Merriam Webster dictionary, the first known use of the word travel was in the 14th century.",

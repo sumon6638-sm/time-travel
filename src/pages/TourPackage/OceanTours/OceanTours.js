@@ -8,7 +8,7 @@ const OceanTours = () => {
     const [oceanTours, setOceanTours] = useState([]);
 
     useEffect(() => {
-        fetch('./oceanTravel.json')
+        fetch('http://localhost:5000/packages')
             .then(res => res.json())
             .then(data => setOceanTours(data));
     },[])
@@ -20,7 +20,7 @@ const OceanTours = () => {
                 <hr className='w-25 mx-auto' />
                 <div className='row row-cols-1 row-cols-md-3 g-4'>
                     {
-                        oceanTours.map(oceanTour =>
+                        oceanTours.slice(8, ).map(oceanTour =>
                             <OceanTour
                                 key={oceanTour.id}
                                 oceanTour={oceanTour}

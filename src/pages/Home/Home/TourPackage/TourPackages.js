@@ -13,7 +13,7 @@ const TourPackages = () => {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
-        fetch('./packageTravel.json')
+        fetch('http://localhost:5000/packages')
             .then(res => res.json())
             .then(data => setTourPackages(data));
     },[])
@@ -39,7 +39,7 @@ const TourPackages = () => {
                     {
                         tourPackages.slice(0, 6).map(tourPackage =>
                             <ShowTourPackage
-                                key={tourPackage.id}
+                                key={tourPackage._id}
                                 tourPackage={tourPackage}
                             ></ShowTourPackage>
                         )

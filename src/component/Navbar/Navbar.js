@@ -11,6 +11,10 @@ const Navbar = () => {
 
     const { user, logOut, } = useAuth();
 
+    const handleAdminPanel = ()=> {
+        alert('Hey, Are you sure you want to manage it?')
+    }
+
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark my-nav">
             <div className="container-fluid">
@@ -41,6 +45,9 @@ const Navbar = () => {
                             </ul>
                         </li>
                         <li className="nav-item">
+                            <NavLink className='text-warning text-decoration-none nav-link' activeStyle={activeTab} to='/myOrders'>MY ORDER</NavLink>
+                        </li>
+                        <li className="nav-item">
                             <NavLink className='text-warning text-decoration-none nav-link' activeStyle={activeTab} to='/blogs'>BLOGS</NavLink>
                         </li>
                         <li className="nav-item">
@@ -49,9 +56,10 @@ const Navbar = () => {
                         {
                             user.email &&
                             <li className="nav-item">
-                                <NavLink className='text-warning text-decoration-none nav-link' activeStyle={activeTab} to='/admin'>MANAGE</NavLink>
+                                <NavLink onClick={handleAdminPanel} className='text-warning text-decoration-none nav-link' activeStyle={activeTab} to='/admin'>ADMIN</NavLink>
                             </li>
                         }
+                        
                         <li className="nav-item">
                             <NavLink className='text-warning text-decoration-none nav-link' activeStyle={activeTab} to='/about'>ABOUT US</NavLink>
                         </li>

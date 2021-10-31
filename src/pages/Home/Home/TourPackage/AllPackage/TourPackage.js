@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const TourPackage = (props) => {
-    const {id, name, img, price, duration, description} = props.tour
+    const {_id, name, img, price, duration, description} = props.tour
 
-    const dynamicUrl = `/tourPackage/${id}`
+    const dynamicUrl = `/tourPackage/${_id}`
 
     return (
         <div className="card mb-3 shadow">
@@ -17,7 +17,7 @@ const TourPackage = (props) => {
                         <h5 class="card-title fw-bold text-success">{name}</h5>
                         <p class="card-text">{description}</p>
                         <h2>${price} <span className='text-muted fs-6'>/per person</span> </h2>
-                        <p class="card-text"><small class="text-muted">{duration}</small></p>
+                        <p class="card-text"><small class="text-muted">{duration} days / {duration-1} night</small></p>
                         <Link to={dynamicUrl}><button className='btn btn-success text-warning fw-bold'><i class="fas fa-check-circle"></i> Book Now</button></Link>
                     </div>
                 </div>

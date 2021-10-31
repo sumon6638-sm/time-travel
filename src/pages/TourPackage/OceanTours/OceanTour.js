@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const OceanTour = (props) => {
 
-    const { id, name, price, duration, description, img } = props.oceanTour
+    const { _id, name, price, duration, description, img } = props.oceanTour
 
-    const dynamicUrl = `/tourPackage/${id}`
+    const dynamicUrl = `/tourPackage/${_id}`
 
     return (
         <div class="col">
