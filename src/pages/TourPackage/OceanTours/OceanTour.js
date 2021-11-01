@@ -18,7 +18,7 @@ const OceanTour = (props) => {
                 </div>
                 <div class="card-footer">
                     <div className='text-start'>
-                        <small class="text-muted">Duration: {duration}</small>
+                        <small class="text-muted">Duration: {duration} days / {duration - 1} night</small>
                     </div>
                     <div className='text-end'>
                         <small class="fw-bold">Cost: ${price}/person</small>
