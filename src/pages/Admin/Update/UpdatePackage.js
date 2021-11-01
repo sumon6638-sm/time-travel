@@ -6,7 +6,7 @@ const UpdatePackage = () => {
     const location = useLocation();
     const history = useHistory();
 
-    const redirect_url = location.state?.from || '/admin';
+    const redirect_url = location.state?.from || '/managePackage';
 
     const { id } = useParams();
 
