@@ -214,7 +214,7 @@ const Login = () => {
                 </form>
 
                 <div className="text-center">
-                    <p>New to <span className='fw-bold text-danger'>MEDICAL PLANET? </span></p>
+                    <p>New to <span className='fw-bold text-danger'>TIME TRAVEL? </span></p>
                     <Link to="/login"> <button className='btn btn-outline-primary ms-1'>Create Account</button></Link>
                 </div>
 

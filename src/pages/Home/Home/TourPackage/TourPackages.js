@@ -19,13 +19,13 @@ const TourPackages = () => {
     },[])
 
     useEffect(() => {
-        fetch('./travellers.json')
+        fetch('https://bloodcurdling-cheateau-92804.herokuapp.com/travellers')
             .then(res => res.json())
             .then(data => setTravellers(data));
     },[])
 
     useEffect(() => {
-        fetch('./blog.json')
+        fetch('https://bloodcurdling-cheateau-92804.herokuapp.com/blogs')
             .then(res => res.json())
             .then(data => setBlogs(data));
     },[])

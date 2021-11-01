@@ -24,8 +24,6 @@ const UpdateAction = () => {
         setTour(updatedOrder);
     }
 
-    
-
     const handleUpdate = e => {
         if ((tour.status) == 'Accept') {
             fetch(`https://bloodcurdling-cheateau-92804.herokuapp.com/booked/${id}`, {

@@ -15,7 +15,7 @@ const ShowBlog = (props) => {
                     <button className='btn btn-outline-warning m-3'>Read More</button>
                 </div>
                 <div class="col-md-5 col-sm-12">
-                    <img src={img} class="img-fluid rounded-start h-100" alt="..." />
+                    <img src={img} class="img-fluid rounded-start" style={{ height: '300px' }} alt="..." />
                 </div>
             </div>
         </div>
