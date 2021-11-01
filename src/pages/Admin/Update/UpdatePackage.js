@@ -1,3 +1,4 @@
+import userEvent from '@testing-library/user-event';
 import React, { useEffect, useState } from 'react';
 import { useHistory, useLocation, useParams } from 'react-router';
 
@@ -18,21 +19,22 @@ const UpdatePackage = () => {
     }, [])
 
     const handleNameChange = e => {
-        const updatedAction = e.target.value;
-        const updatedOrder = { ...tour }
-        updatedOrder.name = updatedAction;
-        setTour(updatedOrder);
+        const updatedName = e.target.value;
+        const updatedTour = { ...tour };
+        updatedTour.name = updatedName;
+        setTour(updatedTour);
     }
 
     const handlePriceChange = e => {
-        const updatedAction = e.target.value;
-        const updatedOrder = { ...tour }
-        updatedOrder.price = updatedAction;
-        setTour(updatedOrder);
+        const updatedPrice = e.target.value;
+        const updatedTour = { ...tour }
+        updatedTour.price = updatedPrice;
+        setTour(updatedTour);
     }
 
     const handleUpdateTour = e => {
-        fetch(`https://bloodcurdling-cheateau-92804.herokuapp.com/package/${id}`, {
+        const url = `https://bloodcurdling-cheateau-92804.herokuapp.com/packages/${id}`
+        fetch(url, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -41,7 +43,7 @@ const UpdatePackage = () => {
         })
             .then(res => res.json())
             .then(data => {
-                alert('Accepted!!');
+                alert('Updated!!');
                 history.push(redirect_url);
                 console.log(data);
             });
@@ -56,10 +58,10 @@ const UpdatePackage = () => {
 
             <form onSubmit={handleUpdateTour}>
                 <label className='my-2 mx-3'>Name</label>
-                <input type="text" onChange={handleNameChange} placeholder='Name' /> <br />
+                <input type="text" onChange={handleNameChange} value={tour.name || ''} placeholder='Name' /> <br />
 
                 <label className='my-2 mx-3'>Price</label>
-                <input type="number" onChange={handlePriceChange} placeholder='$' /> <br />
+                <input type="number" onChange={handlePriceChange} value={tour.price || ''} placeholder='$' /> <br />
 
                 <input className='btn btn-success mx-2' type="submit" value="Update" />
             </form>
