@@ -2,9 +2,9 @@
 
 ## Tour Travel [Live Site Link](https://time-travel-sumon6638.web.app/)
 
-## [Client Side Repository Link](https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-sumon6638-sm)
+## [Client Side Repository Link](https://github.com/sumon6638-sm/time-travel)
 
-## [Server Side Repository Link](https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-sumon6638-sm)
+## [Server Side Repository Link](https://github.com/sumon6638-sm/time-travel-server)
 
 ### Benefits of this Website:
     1. This is an travel based website.
